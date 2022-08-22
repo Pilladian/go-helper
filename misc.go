@@ -6,7 +6,7 @@ func Type(x interface{}) reflect.Type {
 	return reflect.TypeOf(x)
 }
 
-func Remove(s string, sl []interface{}) []interface{} {
+func RemoveElementFromSlice(s interface{}, sl []interface{}) []interface{} {
 	ind := 0
 	for a := range sl {
 		if sl[a] == s {
